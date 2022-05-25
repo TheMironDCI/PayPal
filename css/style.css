@@ -1,0 +1,327 @@
+body{
+    font-family: sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}    
+
+label, input{
+    display: none;
+}
+
+.navbar{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo h1{
+    font-size: 36px;
+    color: white;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin-right: 100px;
+}
+
+.navbar li a{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(207, 191, 191);
+    text-transform: uppercase;
+    padding: 25px 35px;
+    font-weight: 600;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.navbar ul li{
+    transition: .3s;
+}
+
+.navbar li a:hover{
+    background-color: rgba(163, 153, 153, 0.568);
+    color: black;
+}
+
+header{
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.top-nav{
+    border-bottom: 1px solid white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.247);
+}
+
+.mask{
+    background-color: rgba(0, 0, 0, 0.582);
+}
+
+.btn button{
+    padding: 15px 20px;
+    border-radius: 25px;
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn button:first-child{
+    border:1px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+.btn button:first-child:hover{
+    background-color: white;
+    color: black;
+}
+
+.btn button:last-child{
+    border-color: white;
+    margin-left: 15px;
+}
+
+.btn button:last-child:hover{
+    background-color: transparent;
+    color: white;
+}
+
+.bannerH{
+    height: 900px;
+}
+
+.banner-info{
+    color: white;
+}
+
+.banner-info h1{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.banner-info p{
+    margin-bottom: 15px;    
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.banner-info button{
+    padding: 15px 80px;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#first{
+    padding: 100px 0;
+}
+
+#first .title{
+    color: #4C4C4C;
+}
+
+.content{
+    padding: 20px 0;
+}
+
+.icon i{
+    font-size: 50px;
+    color:#29A2E7;
+    margin-bottom: px;
+    
+}
+
+.titleh1 h1{
+    font-size: 35px;
+    margin-bottom: 45px;
+}
+
+.content p{
+    margin: 15px 0;
+}
+
+.content h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+#second{
+    background-color:#2D52A0;
+    padding: 45px;
+}
+
+#second h1{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 45px;
+}
+
+#second h3{
+    color: white;
+    margin: 10px;
+}
+
+#second p{
+    color: white;
+    margin-bottom: 45px;
+}
+
+#first .title button{
+    padding: 10px 25px;
+    border: 1px solid #29A2E7;
+    background-color: white;
+    color: #29A2E7;
+    margin: 12px 0;
+    border-radius: 15px;
+}
+
+#third{
+    padding: 60px 0;
+}
+
+#third img{
+    width: 550px;
+}
+
+#third h1{
+    color: #5E5E5E;
+    font-size: 35px;
+    margin-bottom: 60px;
+
+}
+
+.circle span{
+    border: 1px solid #CBCBCB;
+    border-radius: 50%;
+    padding: 9px 15px;
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.circle p{
+    margin-bottom: 35px;
+    font-size: 20px;
+}
+
+.circle p:first-child span:last-child{
+    border: none;
+    color: #29A2E7;
+}
+
+#fourth{
+    padding: 50px 0;
+    background-color:#F3F7FA;
+}
+
+#fourth h1{
+    font-size: 35px;
+    margin-bottom: 45px;
+    color: #5D6164;
+}
+
+.btn2 button{
+    text-align: center;
+    padding: 15px 150px;
+    border: 1px solid #29A2E7;
+    background-color: #036BB2;
+    color: white;
+    margin: 12px 0;
+    border-radius: 15px;
+}
+
+footer{
+    padding: 30px 0;
+}
+
+footer ul{
+    display: flex;
+    list-style: none;
+}
+
+footer ul li{
+    margin-right: 15px;
+    font-size: 15px;
+}
+
+footer .right{
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer .bbottom{
+    border-bottom: 1px solid #D3D3D3;
+}
+
+footer h4{
+    padding: 35px;
+}
+
+@media (max-width: 768px) {
+    nav{
+        z-index: 20;
+    }
+
+    .navbar{
+        position: fixed;
+        width: 50vw;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.411);
+        display: block;
+        top: 0;
+        right: -100%;
+        z-index: 19;
+        padding: 50px 0;
+    }
+
+    .navbar ul{
+        display: block;
+        text-align: center;
+        margin: 0;
+    }
+
+    .navbar ul li{
+        margin: 25px 0;
+    }
+
+    .btn{
+        text-align: center;
+    }
+
+    label{
+        display: block;
+        cursor: pointer;
+    }
+
+    label span {
+        display: block;
+        width: 40px;
+        height: 4px;
+        margin: 5px;
+        background-color: white;
+        z-index: 25;
+    }
+
+    input:checked ~ nav .navbar{
+        right: 0;
+        z-index: 18;
+    }
+
+    input:checked ~ label{
+        z-index: 21;
+    }
+}
